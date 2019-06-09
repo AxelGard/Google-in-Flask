@@ -1,0 +1,15 @@
+/* never used */
+body{
+  background-color: #f2f2f2;
+
+}
+#search_div{
+  position:fixed;
+  width: 20%;
+  top: 50%;
+  left: 50%;
+}
+#main_img{
+  height: 5%;
+  width: 5%;
+}

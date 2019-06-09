@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <!-- forum input -->
+
+<div id="search_div">
+  <img id="main_img" width="80%" src="https://cdn.vox-cdn.com/thumbor/Pkmq1nm3skO0-j693JTMd7RL0Zk=/0x0:2012x1341/1200x800/filters:focal(0x0:2012x1341)/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg" alt="main_img">
+    <form action="/search" method="get">
+      <div class="form-group">
+        <input class="form-control" aoutocomplte="off" autofocus name="q" placeholder="search" type="text">
+      </div>
+      <!-- submit -->
+      <button type="submit" class="btn btn-primary">search</button>
+      <input type="button" class="btn btn-primary" onclick="location.href='https://theuselessweb.com/';" value="I'm feeling lucky" />
+    </form>
+</div>
+
+{% endblock %}

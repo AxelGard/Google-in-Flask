@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div id="search_div">
+  <a href="/"><img id="main_img" width="20%" src="https://cdn.vox-cdn.com/thumbor/Pkmq1nm3skO0-j693JTMd7RL0Zk=/0x0:2012x1341/1200x800/filters:focal(0x0:2012x1341)/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg" alt="main_img"></a>
+    <form action="/search" method="get">
+      <div class="form-group">
+        <input class="form-control" aoutocomplte="off" autofocus name="q" placeholder="search" type="text">
+      </div>
+    </form>
+    <p>number of results : {{ number_of_results }}</p>
+</div>
+
+<br>
+
+<div class="" style="left:20%;">
+  <ul>
+    {% for page in search_result %}
+      <td><p style="font-size: large;"><a href="{{ page[1] }}">{{ page[0] }}</a></p></td>
+      <td><p style="color: #248f24; font-size: small;">{{ page[1] }}</p></td>
+      <td><p style="font-size: x-small;">{{ page[2] }}</p></td>
+      <br>
+    {% endfor %}
+  </ul>
+</div>
+
+{% endblock %}
