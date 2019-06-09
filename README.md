@@ -2,6 +2,7 @@
 basic google search in flask
 
 ![index page Google](readme_img/index_page.png)
+
 ![search page Google](readme_img/search_page.png)
 
 ## Getting Started
